@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+  --headerColor: rgba(243, 86, 178, 0.678);
+  --bodyFont:'Roboto', sans-serif;
+  --font: 19px;
+  --pink:rgb(128, 8, 78);
+  --white: #fff;
+  --gray: #444;
+  --dark:#141414;
+  --mainColor:#e07ca7;
+  --main2:#F3F3B2;
+  --transition: 0.7s ease;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font);
+}
+
+button{
+  padding: 8px 30px;
+  text-transform: uppercase;
+  background-color: var(--pink);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--pink);
+}
+
+button:hover{
+  background-color:transparent;
+  color: var(--pink);
+  transition: var(--transition);
+
+}
+
+/*************************
+HEADER
+**************************/
+
+.header{
+  /* height: 90vh; */
+  text-align: center;
+  
+  /* display: flex;
+  justify-content: center; */
+/************** 
+Elementi se mogu centrirati i na text align, ne mora biti nuzno display flex
+ **************/
+
+
+padding: 50px 50px 20px 50px;
+ background-image: linear-gradient(rgba(219, 165, 197, 0.99),rgba(255, 255, 255,0.8)), url(design.jpg);
+background-position: center top 25%;
+background-size: cover; 
+
+}
+
+.header i{
+  margin-bottom: 30px;
+  font-size: 30px;
+color: var(--pink);
+/* font-style: bold;
+font-weight: bold; */
+
+}
+
+.header h1{
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: var(--white);
+}
+.header p{
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-style: var(--gray);
+}
+
+.icon{
+  display: flex;
+justify-content: space-between;
+/* align-items: center; */
+padding-top:200px ;
+}
+
+.art{
+  flex: 0 0 22%;
+}
+
+.art i{
+  margin: 20px 0 20px 0;
+  font-size: 50px;
+}
+/************************ 
+MAIN
+************************/
+.main{
+ padding: 50px;
+ text-align: center;
+background-color:var(--mainColor);
+}
+
+.main h2{
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+
+.pink{
+  display: flex;
+  justify-content: space-between;
+ /* padding: 100px; */
+ width: 80%;
+ margin: 50px auto;
+
+}
+
+.img-box{
+  flex: 0 0 48%;
+}
+
+.img{
+border: 1px solid black;
+
+}
+
+.img img{
+  width: 100%;
+  display: block;
+}
+.img-box p{
+ /* margin-top: 30px; */
+ /* border: 1px solid blue; */
+ padding: 20px 10px;
+}
+/****************************** 
+MAIN2
+*******************************/
+
+.main2{
+text-align: center;
+ background-color: var(--main2);
+  padding: 60px 0;
+}
+
+.main2 h2{
+  /* margin-bottom: 30px; */
+  
+   
+}
+
+.yellow{
+  display: flex;
+  justify-content: space-between;
+  width: 80%; 
+  margin: 50px auto 0 auto;
+  /* border: 1px solid black; */
+ 
+
+}
+
+.img-box2{
+  flex: 0 0 30%;
+  /* border: 1px solid greenyellow; */
+}
+.img-box2 .img2 {
+  width: 100%;
+}
+.img-box2 .img2 img {
+  width: 100%;
+}
+
+.img-box2 button{
+  margin-top: 30px;
+}
+
+.img-box2 p{
+  /* border: 1px solid blue; */
+  padding: 20px 10px;
+}
+/***********************  
+FOOTER
+***********************/
+
+footer{
+  background-color: var(--mainColor);
+  text-align: center;
+  padding: 60px 0;
+}
+footer i{
+  font-size: 30px;
+  margin: 20px 5px ;
+}
+footer i{
+  cursor: pointer;
+}
